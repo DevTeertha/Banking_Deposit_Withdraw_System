@@ -33,10 +33,10 @@
 
         //Transaction Area
         //UpdateText
-        function updateDepositText(id , depositNumber) {
+        function updateText(id , amount) {
             var current = document.getElementById(id);
             var currentNumber = parseFloat(current.innerText);
-            var totalAmount = depositNumber + currentNumber;
+            var totalAmount = currentNumber+amount;
             current.innerText = totalAmount;
         }
 
@@ -55,12 +55,13 @@
                 alert("Please Enter Deposit Amount");
             }
             else {
-                updateDepositText('current-deposit',depositNumber);
-                updateDepositText('current-balance',depositNumber);
+                updateText('current-deposit',depositNumber);
+                updateText('current-balance',depositNumber);
                 document.getElementById('deposit-field').value = "";
             }
         }
         depositButton.addEventListener('click', deposit);
+
 
         //withdraw
         function withdraw() {
@@ -79,10 +80,8 @@
                 alert("Please Enter Withdraw Amount");
             }
             else {
-                var totalWithdraw = withdrawNumber + currentWithdrawNumber;
-                currentWithdraw.innerText = totalWithdraw;
-                var totalBalance = currentBalanceNumber - totalWithdraw;
-                currentBalance.innerText = totalBalance;
+                updateText('current-withdraw', withdrawNumber);
+                updateText('current-balance', -1*withdrawNumber);
                 withdrawAmount.value = "";
             }
         }
