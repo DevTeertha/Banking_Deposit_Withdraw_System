@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(196, 196, 196, 0.493);
+}
 #login-area{
     display: block;
     margin-top: 15%;
@@ -15,9 +18,17 @@
 }
 #main-menu{
     display: none;
-    margin: 10% 0;
     color: whitesmoke;
     text-align: center;
+    height: 100vh;
+    background-color: indigo;
+}
+.header h1{
+    font-weight: 600;
+    padding: 2em 0;
+}
+.dwb{
+    margin-top: 5em;
 }
 .deposit{
     background-color: cadetblue;
@@ -42,6 +53,7 @@
     margin: 10em 2em;
 }
 .deposit-card , .withdraw-card{
+    background-color: ivory;
     border-radius: 1em;
     margin: 1em 2em;
     padding: 2em 1em;
