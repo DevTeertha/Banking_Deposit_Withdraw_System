@@ -1,5 +1,5 @@
 #login-area{
-    display: none;
+    display: block;
     margin-top: 15%;
 }
 .submit-area{
@@ -14,7 +14,7 @@
     -o-border-radius: 5px;
 }
 #main-menu{
-    display: block;
+    display: none;
     margin: 10% 0;
     color: whitesmoke;
     text-align: center;
@@ -39,10 +39,11 @@
 }
 .transaction-area{
     color: black;
+    margin: 10em 2em;
 }
 .deposit-card , .withdraw-card{
     border-radius: 1em;
-    margin: 10em 2em;
+    margin: 1em 2em;
     padding: 2em 1em;
     box-shadow: 5px 5px 15px gray;
     -webkit-border-radius: 1em;

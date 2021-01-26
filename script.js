@@ -20,6 +20,7 @@
             if (username.value == "admin" && password.value == "admin") {
                 alert("Success!");
                 loginArea.style.display = 'none';
+                document.getElementById('main-menu').style.display = 'block';
                 username.value = "";
                 password.value = "";
             }
