@@ -1,4 +1,5 @@
 #login-area{
+    display: none;
     margin-top: 15%;
 }
 .submit-area{
@@ -11,4 +12,36 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+#main-menu{
+    display: block;
+    margin: 10% 0;
+    color: whitesmoke;
+    text-align: center;
+}
+.deposit{
+    background-color: cadetblue;
+}
+.withdraw{
+    background-color: coral;
+}
+.balance{
+    background-color: cornflowerblue;
+}
+.status{
+    padding: 2em 0;
+    margin: 0 5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.transaction-area{
+    color: black;
+}
+.deposit-card , .withdraw-card{
+    margin: 10em 2em;
+    padding: 2em 1em;
+    box-shadow: 5px 5px 15px gray;
 }
